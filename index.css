@@ -17,6 +17,7 @@ body{
 }
 .container{
     display: flex;
+    flex-direction: column;
     background-color: #1F2937;
     min-height: 60vh ;
     width: 50vh;
@@ -60,4 +61,34 @@ button{
     border-radius: 3px;
     cursor: pointer;
     border: none;
+}
+
+.results-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: auto;
+    align-items: center;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #273549;
+    width: 90%;
+    text-align: center;
+    min-height: 10vh;
+    padding: 5% 0px 5% 0px;
+    
+}
+.result > h2{
+    font-size: 1rem;
+}
+
+.result > p {
+    font-size: 0.8rem;
+}
+.result > * {
+    color: #CCC1FF;
 }
