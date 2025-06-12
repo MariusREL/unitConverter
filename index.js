@@ -8,9 +8,9 @@ const lengthPara = document.querySelector("#length-conversion")
 const volumePara = document.querySelector("#volume-conversion")
 const massPara = document.querySelector("#mass-conversion")
 
-inputText.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault(); 
+inputText.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault(); 
         convertBtn.click(); 
     }
 });
